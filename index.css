@@ -82,6 +82,11 @@ a {
 }
 
 @media (max-width: 28.75em) {
+    .nav {
+        bottom: 0;
+        top: auto;
+    }
+
     .nav ul{
         justify-content: center;
     }
@@ -239,6 +244,12 @@ a {
     text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
+}
+
+@media (max-width: 28.75em) {
+    .footer {
+        margin-bottom: 5rem;
+    }
 }
 
 /* Footer */
