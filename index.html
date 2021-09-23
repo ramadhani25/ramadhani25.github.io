@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadhani Asrofa Kemal</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/386e6055da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NavBar -->
+        <nav id="navbar" class="nav">
+            <ul>
+                <li class="nav-list"><a href="#welcome-section">About</a></li>
+                <li class="nav-list"><a href="#projects">Works</a></li>
+                <li class="nav-list"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    <!-- NavBar -->
+    
+    <!-- welcome-section -->
+    <section id="welcome-section" class="welcome-section">
+        <h1>Hi, Im <span class="name">Ramadhani AK</span></h1>
+        <p>a Web Developer</p>
+    </section>
+    <!-- welcome-section -->
+
+
+    <section id="projects" class="project-section">
+        <div class="project-header">
+            <h1>My Project</h1>
+        </div>
+
+        <div class="project-grid">
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 1</div>
+                <img class="project-image" src="http://placeimg.com/740/480/tech" alt="">
+            </a>
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 2</div>
+                <img class="project-image" src="http://placeimg.com/760/490/tech" alt="">
+            </a>
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 3</div>
+                <img class="project-image" src="http://placeimg.com/640/500/tech" alt="">
+            </a>
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 4</div>
+                <img class="project-image" src="http://placeimg.com/640/480/tech" alt="">
+            </a>
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 5</div>
+                <img class="project-image" src="http://placeimg.com/620/490/tech" alt="">
+            </a>
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 6</div>
+
+                <img class="project-image" src="http://placeimg.com/930/500/tech" alt="">
+            </a>
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 7</div>
+                <img class="project-image" src="http://placeimg.com/840/480/tech" alt="">
+            </a>
+            <a href="https://github.com/ramadhani25" class="project-tile" target="_blank">
+                <div class="project-title">Project 8</div>
+                <img class="project-image" src="http://placeimg.com/650/490/tech" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div>
+            <h1 class="contact-header">My Contact</h1>
+        </div>
+        <div class="contact-links">
+            <a id="profile-link" class="profile-link" href="https://github.com/ramadhani25" target="_blank"><i class="fab fa-github"></i> Github</a>
+            <a class="profile-link" href="https://www.freecodecamp.org/ramadhaniak25" target="_blank"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a>
+            <a class="profile-link" href="mailto:ramadhaniak1125@gmail.com"><i class="far fa-envelope"></i> Email</a>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer">
+           Copyright &copy; <span id="time"></span> Ramadhani AK
+        </div>
+    </section>
+
+    <script>
+        // Scrolling Function
+        window.addEventListener('scroll', function() {
+            let header = document.getElementById('navbar')
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+
+    <script>
+        // YearNow Function
+        let time = new Date().getFullYear()
+        document.getElementById("time").innerHTML = time;
+    </script>
+
+</body>
+</html>

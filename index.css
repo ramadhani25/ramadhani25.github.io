@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --main-black: #222831;
+    --main-gray: #393E46;
+    --main-orange: #EF8B40;
+    --main-blue: #40A4EF;
+    --main-white: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* 1200px */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+  
+/* 980px */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+  
+/* 460px */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: var(--main-white);
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+/* Nav */
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav ul{
+    transition: ease-in-out 0.2s;
+    list-style: none;
+    background: var(--main-black);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+    .nav ul{
+        justify-content: center;
+    }
+    
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+.nav-list a {
+    color: var(--main-white);
+    display: block;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    transition: ease-in-out 0.2s;
+}
+
+.nav-list a:hover {
+    color: var(--main-blue);
+    transform: translate(0, 1.2px);
+    transition: ease-in-out 0.2s;
+}
+
+.scrolling-active ul{
+    background: var(--main-white);
+    transition: 0.2s;
+    transition: ease-in-out 0.3s;
+}
+
+.scrolling-active a {
+    color: var(--main-black);
+    padding: 1.4rem;
+}
+
+.scrolling-active a:hover {
+    color: var(--main-orange);
+}
+
+/* Nav */
+
+/* welcome-section */
+
+.welcome-section{
+    height: 55vh;
+    padding-top: 45vh;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    color: var(--main-white);
+    background-color: var(--main-gray);
+}
+
+.welcome-section h1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.welcome-section p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.welcome-section .name {
+    font-weight: 700;
+    color: var(--main-orange);
+}
+
+/* welcome-section */
+
+/* Projects */
+
+.project-section {
+    padding: 6rem;
+    text-align: center;
+    min-height: calc(100vh - 74px);
+    background-color: var(--main-black);
+}
+
+.project-header {
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(240px, 1fr)); 
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.project-tile {
+    background-color: var(--main-gray);
+    transition: ease-in-out 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.project-tile:hover {
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+    transform: scale(1.05);
+}
+
+.project-title {
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Projects */
+
+/* Contact */
+
+.contact-section {
+    background-color: var(--main-gray);
+    width: 100%;
+    padding: 6rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header {
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+}
+
+.profile-link {
+    margin: 0 2rem;
+    font-size: 1.6rem;
+}
+
+/* Contact */
+
+/* Footer */
+
+.footer {
+    background-color: var(--main-black);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
